@@ -17,31 +17,39 @@
 package org.eksplorasi.unittesting.impl;
 
 import org.eksplorasi.unittesting.Calculator;
+import org.eksplorasi.unittesting.CalculatorService;
 
 /**
  *
  * @author Budi Ariyanto <fx.budi.ariyanto at gmail.com>
  */
-public class CalculatorImpl implements Calculator{
+public class CalculatorServiceImpl implements CalculatorService {
+
+    private Calculator calculator = null;
+    
+    @Override
+    public void setCalculator(Calculator calculator) {
+        this.calculator = calculator;
+    }
 
     @Override
     public double add(double num1, double num2) {
-        return num1 + num2;
+        return calculator.add(num1, num2);
     }
 
     @Override
     public double subtract(double num1, double num2) {
-        return num1 - num2;
+        return calculator.subtract(num1, num2);
     }
 
     @Override
     public double multiply(double num1, double num2) {
-        return num1 * num2;
+        return calculator.multiply(num1, num2);
     }
 
     @Override
-    public double division(double num1, double num2) {
-        return num1 / num2;
+    public double divide(double num1, double num2) {
+        return calculator.division(num1, num2);
     }
     
 }

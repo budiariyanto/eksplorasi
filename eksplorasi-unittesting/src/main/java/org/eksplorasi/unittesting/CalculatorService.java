@@ -19,10 +19,13 @@ package org.eksplorasi.unittesting;
 /**
  *
  * @author Budi Ariyanto <fx.budi.ariyanto at gmail.com>
+ * Interface ini dibuat untuk tujuan mocking. Interface ini dibuat membutuhkan
+ * object Calculator yang nantinya akan dimock
  */
-public interface Calculator {
+public interface CalculatorService {
+    void setCalculator(Calculator calculator);
     double add(double num1, double num2);
     double subtract(double num1, double num2);
     double multiply(double num1, double num2);
-    double division(double num1, double num2);
+    double divide(double num1, double num2);
 }

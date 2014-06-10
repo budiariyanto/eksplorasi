@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 budi.
+ * Copyright 2014 Budi Ariyanto <fx.budi.ariyanto at gmail.com>.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 /**
  *
- * @author budi
+ * @author Budi Ariyanto <fx.budi.ariyanto at gmail.com>
  */
 @RunWith(Parameterized.class)
 public class CalculatorParameterizedDivisionTest {
