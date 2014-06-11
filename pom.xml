@@ -6,6 +6,15 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+	<module>eksplorasi-ajax-push</module>
+	<module>eksplorasi-config</module>
+	<module>eksplorasi-domain</module>
+	<module>eksplorasi-integration</module>
+	<module>eksplorasi-log</module>
+	<module>eksplorasi-restful</module>
+	<module>eksplorasi-security</module>
+	<module>eksplorasi-service</module>
+	<module>eksplorasi-webapp</module>
         <module>eksplorasi-unittesting</module>
     </modules>
     <properties>
