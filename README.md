@@ -16,6 +16,7 @@ Eksplorasi saya waktu ngoding, mostly pakai java, springframework. Yang mau paka
 * Twitter Bootstrap
 * JUnit
 * Mockito
+* Slf4J-logback
 
 ## Database
 Database menggunakan **postgresql**. Datanya pakai database sample pagila versi 0.10.1. Filenya include di repo ini. Atau mau download dari sumbernya langsung di [sini](http://pgfoundry.org/frs/download.php/1719/pagila-0.10.1.zip) juga boleh. Siapa tau ada revisi database.
