@@ -1,4 +1,4 @@
-package org.ventus.chimpanzee.log.aspects;
+package org.eksplorasi.log.aspects;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -9,14 +9,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class BukuUjianAspect {
+public class ActorAspect {
 	
-	static final Logger logger = LoggerFactory.getLogger(BukuUjianAspect.class);
+	static final Logger logger = LoggerFactory.getLogger(ActorAspect.class);
 	
 	//@Pointcut("execution(public * org.ventus.chimpanzee.web.controller.BukuUjianController.getBukuUjian(String)) && args(name)")
-        @Before("execution(public * org.ventus.chimpanzee.web.controller.BukuUjianController.getBukuUjian(..))")
-	public void findByNameAdvice() {
-            System.out.println("UYGUYTTI");
+        @Before("execution(public * org.eksplorasi.web.controller.ActorController.getActor(..))")
+	public void findByFirstNameAdvice() {
             logger.debug("Buku Ujian Service, method findByName with query parameter called");
 	}
 }

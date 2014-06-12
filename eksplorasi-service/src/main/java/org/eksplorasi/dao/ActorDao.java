@@ -1,11 +1,11 @@
-package org.ventus.chimpanzee.dao;
+package org.eksplorasi.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.ventus.chimpanzee.domain.BukuUjianEntity;
+import org.eksplorasi.domain.Actor;
 
-public interface BukuUjianDao extends JpaRepository<BukuUjianEntity, Long> {
+public interface ActorDao extends JpaRepository<Actor, Long> {
 	
-	@Query("select bu from BukuUjianEntity bu where bu.nama = ?1")
-	BukuUjianEntity findByName(String name);
+	@Query("select actor from Actor actor where actor.first_name = ?1")
+	Actor findByFirstName(String firstName);
 }

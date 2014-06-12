@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 
-package org.ventus.chimpanzee.service.impl;
+package org.eksplorasi.service.impl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.ventus.chimpanzee.dao.UserDao;
-import org.ventus.chimpanzee.domain.User;
-import org.ventus.chimpanzee.service.UserService;
+import org.eksplorasi.dao.UserDao;
+import org.eksplorasi.domain.User;
+import org.eksplorasi.service.UserService;
 
 /**
  *
@@ -42,7 +42,8 @@ public class UserServiceImpl implements UserService{
     }
 
     public User findByUsername(String username) {
-        return userDao.findByUsername(username);
+        //return userDao.findByUsername(username);
+        return null;
     }
     
 }

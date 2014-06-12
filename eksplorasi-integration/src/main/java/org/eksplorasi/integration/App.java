@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package org.ventus.chimpanzee.integration;
+package org.eksplorasi.integration;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

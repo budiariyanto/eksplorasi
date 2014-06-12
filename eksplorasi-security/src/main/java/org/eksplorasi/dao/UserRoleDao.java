@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package org.ventus.chimpanzee.dao;
+package org.eksplorasi.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.ventus.chimpanzee.domain.UserRole;
+import org.eksplorasi.domain.UserRole;
 
 /**
  *

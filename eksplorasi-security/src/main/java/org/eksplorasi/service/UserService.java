@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package org.ventus.chimpanzee.service;
+package org.eksplorasi.service;
 
 import java.util.List;
-import org.ventus.chimpanzee.domain.User;
+import org.eksplorasi.domain.User;
 
 /**
  *

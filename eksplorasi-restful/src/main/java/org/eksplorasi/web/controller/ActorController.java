@@ -1,32 +1,32 @@
-package org.ventus.chimpanzee.web.controller;
+package org.eksplorasi.web.controller;
 
 import java.util.List;
+import org.eksplorasi.domain.Actor;
+import org.eksplorasi.service.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.ventus.chimpanzee.domain.BukuUjianEntity;
-import org.ventus.chimpanzee.service.BukuUjianService;
 
 @Controller
-@RequestMapping("/bukuUjian")
-public class BukuUjianController {
+@RequestMapping("/actor")
+public class ActorController {
 	
-	@Autowired BukuUjianService bukuUjianService;
+	@Autowired ActorService actorService;
 	
 	@RequestMapping(value="/{name}", method = RequestMethod.GET)
 	@ResponseBody
-	public BukuUjianEntity getBukuUjian(@PathVariable String name) {
-            BukuUjianEntity bukuUjianEntity = bukuUjianService.findByName(name);
-            return bukuUjianEntity;
+	public Actor getActorByFirstName(@PathVariable String firstName) {
+            Actor actor = actorService.findByFirstName(firstName);
+            return actor;
 	}
         
         @RequestMapping(value="/all", method = RequestMethod.GET)
         @ResponseBody
-        public List<BukuUjianEntity> getAllBukuUjian() {
-            List<BukuUjianEntity> bukuUjianEntities = bukuUjianService.findAll();
-            return bukuUjianEntities;
+        public List<Actor> getAllBukuUjian() {
+            List<Actor> actors = actorService.findAll();
+            return actors;
         }
 }

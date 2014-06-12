@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package org.ventus.chimpanzee.integration.service.impl;
+package org.eksplorasi.integration.service.impl;
 
 import org.springframework.stereotype.Service;
-import org.ventus.chimpanzee.integration.service.HelloService;
+import org.eksplorasi.integration.service.HelloService;
 
 /**
  *

@@ -1,53 +1,50 @@
-package org.ventus.chimpanzee.service.impl;
+package org.eksplorasi.service.impl;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
+import org.eksplorasi.dao.ActorDao;
+import org.eksplorasi.domain.Actor;
+import org.eksplorasi.service.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
-import org.ventus.chimpanzee.dao.BukuUjianDao;
-import org.ventus.chimpanzee.domain.BukuUjianEntity;
-import org.ventus.chimpanzee.service.BukuUjianService;
 
 @Service
 @Transactional
-public class BukuUjianServiceImpl implements BukuUjianService{
+public class ActorServiceImpl implements ActorService{
 	
-	private final BukuUjianDao bukuUjianDao;
+	private final ActorDao actorDao;
 	
 	@Autowired
-	public BukuUjianServiceImpl(BukuUjianDao bukuUjianDao) {
-		Assert.notNull(bukuUjianDao);
-		this.bukuUjianDao = bukuUjianDao;
+	public ActorServiceImpl(ActorDao actorDao) {
+		Assert.notNull(actorDao);
+		this.actorDao = actorDao;
 	}
 	
-	public void save(BukuUjianEntity bukuUjianEntity) {
+	public void save(Actor actor) {
 		// TODO Auto-generated method stub
-		bukuUjianDao.save(bukuUjianEntity);
+		actorDao.save(actor);
 	}
 
-	public void edit(BukuUjianEntity bukuUjianEntity) {
+	public void edit(Actor actor) {
 		// TODO Auto-generated method stub
-		bukuUjianDao.save(bukuUjianEntity);
+		actorDao.save(actor);
 	}
 
-	public void delete(BukuUjianEntity bukuUjianEntity) {
+	public void delete(Actor actor) {
 		// TODO Auto-generated method stub
-		bukuUjianDao.delete(bukuUjianEntity);
+		actorDao.delete(actor);
 	}
 
-	public List<BukuUjianEntity> findAll() {
+	public List<Actor> findAll() {
 		// TODO Auto-generated method stub
-		return bukuUjianDao.findAll();
+		return actorDao.findAll();
 	}
 
-	public BukuUjianEntity findByName(String name) {
+	public Actor findByFirstName(String name) {
 		// TODO Auto-generated method stub
-		return bukuUjianDao.findByName(name);
+		return actorDao.findByFirstName(name);
 	}
 
 }

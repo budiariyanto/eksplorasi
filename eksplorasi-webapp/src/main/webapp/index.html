@@ -6,19 +6,19 @@ and open the template in the editor.
 -->
 <html ng-app>
     <head>
-        <title>Daftar Buku Ujian</title>
+        <title>List Of Actors</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <!--        <link rel="stylesheet" href="css/app.css">-->
         <script src="js/angular.min.js"></script>
-    	<script src="controller/bukuUjianController.js"></script>
+    	<script src="controller/actorController.js"></script>
     </head>
     <body>
-        <div ng-controller="getAllBukuUjian">
+        <div ng-controller="getAllActor">
         <table class="table-responsive">
-            <tr><td>Kode</td><td>Nama</td></tr>
-            <tr ng-repeat="bu in bukuUjian"><td>{{bu.kode}}</td><td>{{bu.nama}}</td></tr>
+            <tr><td>Actor id</td><td>First Name</td><td>Last Name</td></tr>
+            <tr ng-repeat="a in actor"><td>{{a.actor_id}}</td><td>{{a.first_name}}</td><td>{{a.last_name}}</td></tr>
         </table>
         </div>
     </body>
